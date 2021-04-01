@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class AppApplication {
-    @GetMapping("/user")
+    @GetMapping("/hello")
     public String user() {
         return "jojo";
     }
