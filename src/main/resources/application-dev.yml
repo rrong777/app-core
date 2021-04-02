@@ -8,9 +8,12 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://192.168.3.40:3306/multi?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
-      username: root
-      password: slzh@mysql2020
+      url: jdbc:mysql://124.70.157.93:3306/liangshi?useSSL=false&useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+      username: dbls
+      password: 123456t
+#      url: jdbc:mysql://192.168.3.40:3306/multi?useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+#      username: root
+#      password: slzh@mysql2020
       filters: stat,wall,log4j ,config
       max-active: 100
       initial-size: 1
@@ -40,4 +43,7 @@ logging:
   level:
     com.slzh.dao: DEBUG
     com.slzh: debug
+
+
+
 
