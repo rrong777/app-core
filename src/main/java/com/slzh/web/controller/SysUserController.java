@@ -4,7 +4,10 @@ import com.slzh.model.SysUser;
 import com.slzh.model.http.HttpResult;
 import com.slzh.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/user")
@@ -17,7 +20,8 @@ public class SysUserController {
     }
 
     @PostMapping
-    public HttpResult user(@RequestBody SysUser sysUser) {
+    public HttpResult user(@RequestBody @Valid SysUser sysUser, BindingResult errors) {
+        System.out.println(111);
         return null;
     }
 }

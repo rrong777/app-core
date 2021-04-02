@@ -1,12 +1,15 @@
 package com.slzh.model;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
 
 public class SysUser {
     private String username;
 
-    @NotNull
+    @NotNull(message = "密码不能为空")
     private String password;
+
 
     public String getPassword() {
         return password;
