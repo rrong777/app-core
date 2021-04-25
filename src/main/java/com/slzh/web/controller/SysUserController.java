@@ -21,7 +21,6 @@ public class SysUserController {
 
     @PostMapping
     public HttpResult user(@RequestBody @Valid SysUser sysUser, BindingResult errors) {
-        System.out.println(111);
         return null;
     }
 }
